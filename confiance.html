@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confiance en soi | Mc'HENRI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bleu-fonce: #1C3F60;
+      --bleu-clair: #E8F1FA;
+      --gris-pale: #F7F9FC;
+      --btn-action: #2D9CDB;
+      --texte-principal: #1C3F60;
+      --texte-secondaire: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--gris-pale);
+      color: var(--texte-principal);
+    }
+
+    header {
+      background-color: var(--bleu-clair);
+      text-align: center;
+      padding: 4rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--bleu-fonce);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-top: 1rem;
+      color: var(--texte-secondaire);
+    }
+
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section.gris {
+      background-color: var(--gris-pale);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .bloc-probleme {
+      background-color: var(--gris-pale);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .etapes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .etape {
+      background-color: var(--blanc);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .etape span {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn-principal {
+      background-color: var(--btn-action);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+      text-align: center;
+      margin-top: 1.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-principal:hover {
+      background-color: #1a80b2;
+    }
+
+    .livres {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .livre-carte {
+      background-color: var(--blanc);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .livre-carte img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .livre-carte h4 {
+      margin: 1rem 0;
+      color: var(--bleu-fonce);
+    }
+
+    .livre-carte p {
+      color: var(--texte-secondaire);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn-telecharger, .btn-acheter {
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-size: 0.95rem;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .btn-telecharger {
+      background-color: var(--bleu-clair);
+    }
+
+    .btn-telecharger:hover {
+      background-color: #56CCF2;
+    }
+
+    .btn-acheter {
+      background-color: #4CAF50;
+    }
+
+    .btn-acheter:hover {
+      background-color: #45a049;
+    }
+
+    .citation {
+      background-color: var(--bleu-clair);
+      text-align: center;
+      padding: 3rem 1rem;
+      font-style: italic;
+      color: var(--bleu-fonce);
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background-color: var(--gris-pale);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .btn-principal {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tu crois que t’es pas assez bon ? C’est un mensonge.</h1>
+    <p>La confiance ne naît pas. Elle se construit. Tu n’as pas besoin d’être parfait. Tu as besoin de vérité, d’action, et d’amour propre.</p>
+  </header>
+
+  <section class="section gris">
+    <div class="bloc-probleme">
+      <p>
+        Beaucoup se sentent bloqués, incapables d’agir, de parler, de créer, de s’exposer…<br>
+        Pas parce qu’ils n’ont rien à dire, mais parce qu’ils pensent qu’ils ne valent rien.<br><br>
+        Ils vivent avec :<br>
+        ❌ Des critiques blessantes<br>
+        ❌ Des comparaisons constantes<br>
+        ❌ Des échecs mal digérés<br>
+        ❌ Une voix intérieure négative<br><br>
+        <strong>Résultat =</strong> Sabotage. Abandon. Inaction. Disparition.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 style="text-align: center; color: var(--bleu-fonce);">5 Étapes pour Construire la Confiance</h2>
+    <div class="etapes">
+      <div class="etape">
+        <span>🔍</span>
+        <strong>Identifier la racine du doute</strong>
+        <p>Cherche d’où vient ton manque de confiance : rejet, critique, blessure ?</p>
+      </div>
+      <div class="etape">
+        <span>💬</span>
+        <strong>Changer ton dialogue intérieur</strong>
+        <p>Remplace “je suis nul” par “je suis en croissance”. Utilise affirmations et versets.</p>
+      </div>
+      <div class="etape">
+        <span>📈</span>
+        <strong>Petites victoires chaque semaine</strong>
+        <p>Agir petit, mais agir : dire “non”, se montrer, finir un objectif simple.</p>
+      </div>
+      <div class="etape">
+        <span>📖</span>
+        <strong>Nourris-toi de paroles vraies</strong>
+        <p>Regarde, lis et écoute ce qui élève ton âme et ta vision de toi.</p>
+      </div>
+      <div class="etape">
+        <span>🤝</span>
+        <strong>Entoure-toi de bâtisseurs</strong>
+        <p>Coupe ce qui t’écrase. Rapproche-toi de ce qui te rappelle ta valeur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 style="text-align: center; color: var(--bleu-fonce);">Télécharge ton journal de confiance</h2>
+    <p style="text-align: center;">Un journal simple pour construire ta valeur jour après jour.</p>
+    <a href="https://drive.google.com/file/d/1Cb_5zHpe_PypmZvUgNXMA57dBJdjgppv/view?usp=sharing" class="btn-principal" download>📥 Télécharger le Journal PDF</a>
+  </section>
+
+  <section class="section">
+    <h2 style="text-align: center; color: var(--bleu-fonce);">Lis pour grandir. Apprends à croire en toi.</h2>
+    <div class="livres">
+      <div class="livre-carte">
+        <img src="site img.html/livre 1 c.PNG" alt="Le Pouvoir de Croire en Soi">
+        <h4>Estime de Soi ou apprendre a s'aimer</h4>
+        <p>Un livre simple pour te libérer du regard des autres.</p>
+        <a href="https://drive.google.com/file/d/1ONkJZADNnNup3DrvTofoSPhRFvf81pJ2/view?usp=sharing" class="btn-telecharger">📖 Télécharger</a>
+      </div>
+      <div class="livre-carte">
+        <img src="site img.html/LIDR.png" alt="Tu es Capable – Version Foi">
+        <h4>Quand Tout Semble Perdu</h4>
+        <p>Redécouvre ta force intérieure selon Dieu.</p>
+        <a href="https://www.pay.moneyfusion.net/quand-tout-semble-perdu_1742894296572/" class="btn-acheter">🛒 Acheter</a>
+      </div>
+      <div class="livre-carte">
+        <img src="site img.html/LIVRE3C.PNG" alt="Affirmations Bibliques">
+        <h4>Affirmations Bibliques pour la Confiance</h4>
+        <p>31 jours pour transformer tes pensées avec la Parole.</p>
+        <a href="https://drive.google.com/drive/folders/1XicWOXHQ947zVMXIhrCrtYdPUkMYkbs2?usp=sharing" class="btn-telecharger">📖 Télécharger</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="citation">
+    “Dieu ne t’a pas créé pour te cacher. Il t’a formé pour briller.”
+  </section>
+
+  <footer>
+    © Mc’HENRI – Vision | Discipline | Foi – Tous droits réservés
+  </footer>
+
+</body>
+</html>
